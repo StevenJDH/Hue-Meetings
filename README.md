@@ -1,7 +1,17 @@
 # Hue Meetings
 
+[![build](https://github.com/StevenJDH/Hue-Meetings/actions/workflows/dotnet-sonar-workflow.yml/badge.svg?branch=main)](https://github.com/StevenJDH/Hue-Meetings/actions/workflows/dotnet-sonar-workflow.yml)
 ![GitHub All Releases](https://img.shields.io/github/downloads/StevenJDH/Hue-Meetings/total)
 ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/StevenJDH/Hue-Meetings?include_prereleases)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/ef02e3c5d4e845159f03a3fc621b3395)](https://www.codacy.com/gh/StevenJDH/Hue-Meetings/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=StevenJDH/Hue-Meetings&amp;utm_campaign=Badge_Grade)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=StevenJDH_Hue-Meetings&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=StevenJDH_Hue-Meetings)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=StevenJDH_Hue-Meetings&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=StevenJDH_Hue-Meetings)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=StevenJDH_Hue-Meetings&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=StevenJDH_Hue-Meetings)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=StevenJDH_Hue-Meetings&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=StevenJDH_Hue-Meetings)
+[![Sonar Violations (long format)](https://img.shields.io/sonar/violations/StevenJDH_Hue-Meetings?format=long&server=https%3A%2F%2Fsonarcloud.io)](https://sonarcloud.io/dashboard?id=StevenJDH_Hue-Meetings)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=StevenJDH_Hue-Meetings&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=StevenJDH_Hue-Meetings)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=StevenJDH_Hue-Meetings&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=StevenJDH_Hue-Meetings)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=StevenJDH_Hue-Meetings&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=StevenJDH_Hue-Meetings)
 ![Maintenance](https://img.shields.io/maintenance/yes/2022)
 ![GitHub](https://img.shields.io/github/license/StevenJDH/Hue-Meetings)
 
