@@ -21,22 +21,22 @@ using Hue_Meetings.Services;
 using Moq;
 using NUnit.Framework;
 
-namespace Hue_Meetings.Tests.Services
-{
-    public class HueOAuth2PkceServiceTests
-    {
-        [SetUp]
-        public void Setup()
-        {
-            // Method intentionally left empty.
-        }
+namespace Hue_Meetings.Tests.Services;
 
-        [Test]
-        public void Test1()
-        {
-            string expectedHash = "ed076287532e86365e841e92bfc50d8c";
-            string hash = HueOAuth2PkceService.GetMd5String("Hello World!");
-            Assert.AreEqual(expectedHash, hash);
-        }
+[TestFixture]
+public class HueOAuth2PkceServiceTests
+{
+    [SetUp]
+    public void Setup()
+    {
+        // Method intentionally left empty.
+    }
+
+    [TestCase, Description("Should return valid MD5 hash for literal string.")]
+    public void Should_ReturnValidMd5Hash_ForLiteralString()
+    {
+        string expectedHash = "ed076287532e86365e841e92bfc50d8c";
+        string hash = HueOAuth2PkceService.GetMd5String("Hello World!");
+        Assert.That(hash, Is.EqualTo(expectedHash));
     }
 }

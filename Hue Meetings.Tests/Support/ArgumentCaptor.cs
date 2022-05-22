@@ -23,21 +23,20 @@ using System.Text;
 using System.Threading.Tasks;
 using Moq;
 
-namespace Hue_Meetings.Tests.Support
+namespace Hue_Meetings.Tests.Support;
+
+public class ArgumentCaptor<T>
 {
-    public class ArgumentCaptor<T>
+    public T Capture()
     {
-        public T Capture()
-        {
-            return It.Is<T>(t => SaveValue(t));
-        }
-
-        private bool SaveValue(T t)
-        {
-            Value = t;
-            return true;
-        }
-
-        public T? Value { get; private set; }
+        return It.Is<T>(t => SaveValue(t));
     }
+
+    private bool SaveValue(T t)
+    {
+        Value = t;
+        return true;
+    }
+
+    public T? Value { get; private set; }
 }
