@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hue Meetings", "Hue Meetings\Hue Meetings.csproj", "{70513851-34B9-4B58-AB82-267643A2B7BD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hue Meetings.Tests", "Hue Meetings.Tests\Hue Meetings.Tests.csproj", "{B6553B36-13EC-4912-9FEC-1781ADF31C69}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70513851-34B9-4B58-AB82-267643A2B7BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70513851-34B9-4B58-AB82-267643A2B7BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70513851-34B9-4B58-AB82-267643A2B7BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70513851-34B9-4B58-AB82-267643A2B7BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6553B36-13EC-4912-9FEC-1781ADF31C69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6553B36-13EC-4912-9FEC-1781ADF31C69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6553B36-13EC-4912-9FEC-1781ADF31C69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6553B36-13EC-4912-9FEC-1781ADF31C69}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B915BBA2-A82D-4C5C-9357-45FC8419081F}
+	EndGlobalSection
+EndGlobal
