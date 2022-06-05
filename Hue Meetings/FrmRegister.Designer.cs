@@ -102,6 +102,7 @@ namespace Hue_Meetings
             this.chkRemote.TabIndex = 2;
             this.chkRemote.Text = "Using a VPN?";
             this.chkRemote.UseVisualStyleBackColor = true;
+            this.chkRemote.CheckedChanged += new System.EventHandler(this.chkRemote_CheckedChanged);
             // 
             // label2
             // 

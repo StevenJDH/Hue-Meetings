@@ -96,6 +96,7 @@ public partial class FrmRegister : Form
     {
         cmbBridges.Items.Clear();
         cmbUsers.Items.Clear();
+        btnDelete.Enabled = false;
 
         IBridgeLocator locator;
 
@@ -139,8 +140,9 @@ public partial class FrmRegister : Form
 
             foreach (var bridge in bridges)
             {
-                // TODO: Check if Philips Hue has really removed Internal IP on remote responses.
-                cmbBridges.Items.Add($"{bridge.BridgeId} [{bridge.InternalIpAddress}]");
+                // Philips Hue removed Internal IP on remote responses, so we add when available.
+                String internalIp = bridge.InternalIpAddress is null ? "" : $" [{bridge.InternalIpAddress}]";
+                cmbBridges.Items.Add($"{bridge.BridgeId}{internalIp}");
             }
         }
         catch (Exception ex) when (ex is HttpRequestException or HueMeetingsException)
@@ -336,4 +338,11 @@ public partial class FrmRegister : Form
 
     private void Wab_StatusChanged(object? sender, WabStatusChangedEventArgs e) =>
         Debug.WriteLine($"{e.Status}{(e.ErrorMessage != null ? $" {e.ErrorMessage}" : "")}");
+
+    private void chkRemote_CheckedChanged(object sender, EventArgs e)
+    {
+        cmbBridges.Items.Clear();
+        cmbUsers.Items.Clear();
+        btnDelete.Enabled = false;
+    }
 }

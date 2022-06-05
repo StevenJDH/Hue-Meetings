@@ -29,11 +29,14 @@ public record Bridge([property: JsonPropertyName("id")] string BridgeId,
                      [property: JsonPropertyName("internalipaddress")] string? InternalIpAddress)
 {
     /// <summary>
-    /// Provides the Bridge Id, which is based on the MAC, and the internal IP for a more readable object name.
+    /// Provides the Bridge Id, which is based on the MAC, and the internal IP if available for a
+    /// more readable object name.
     /// </summary>
     /// <returns>Object name in the form of "Bridge 001a223b445c66ff: 192.168.1.50".</returns>
     public sealed override string ToString()
     {
-        return $"Bridge {BridgeId}: {InternalIpAddress}"; // TODO: Check if Philips Hue has really removed Internal IP on remote responses.
+        // Philips Hue removed Internal IP on remote responses, so we add when available.
+        String internalIp = InternalIpAddress is null ? "" : $": {InternalIpAddress}";
+        return $"Bridge {BridgeId}{internalIp}";
     }
 }
