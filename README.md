@@ -12,7 +12,7 @@
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=StevenJDH_Hue-Meetings&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=StevenJDH_Hue-Meetings)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=StevenJDH_Hue-Meetings&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=StevenJDH_Hue-Meetings)
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=StevenJDH_Hue-Meetings&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=StevenJDH_Hue-Meetings)
-![Maintenance](https://img.shields.io/maintenance/yes/2022)
+![Maintenance](https://img.shields.io/maintenance/yes/2023)
 ![GitHub](https://img.shields.io/github/license/StevenJDH/Hue-Meetings)
 
 Hue Meetings is a tool that was developed to help make working from home a little easier by using Philips Hue smart lights as a sort of meeting status indicator. When a call starts, the chosen light will turn red, and when the call ends, the light will either turn green or turn off. And yes, all colors can be customized. Hue Meetings also has a VPN mode to support scenarios where a direct connection to the light is not an option because network traffic is being routed over a VPN connection. 
@@ -24,7 +24,7 @@ Development is still ongoing, and there is still much to be done, but a first re
 Releases: [https://github.com/StevenJDH/Hue-Meetings/releases](https://github.com/StevenJDH/Hue-Meetings/releases)
 
 ## Features
-* Supports Philips Hue API v2 where available. Latest flavor of AP1 v1 used only for Bridge management.
+* Supports Philips Hue API v2 where available. Latest flavor of AP1 v1 is used only for Bridge management.
 * Remote API support using OAuth2 with PKCE and Digest Authentication for VPN compatibility.
 * Bridge user/app key management.
 * Custom color selection for meeting status.
