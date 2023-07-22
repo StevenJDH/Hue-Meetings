@@ -54,11 +54,17 @@ namespace Hue_Meetings.Services
         public HueOAuth2PkceService(string appId, string clientId, string clientSecret, HttpClient? httpClient = null)
         {
             if (string.IsNullOrEmpty(appId))
+            {
                 throw new ArgumentNullException(nameof(appId));
+            }
             if (string.IsNullOrEmpty(clientId))
+            {
                 throw new ArgumentNullException(nameof(clientId));
+            }
             if (string.IsNullOrEmpty(clientSecret))
+            {
                 throw new ArgumentNullException(nameof(clientSecret));
+            }
 
             _appId = appId.Trim();
             _clientId = clientId.Trim();
@@ -93,9 +99,13 @@ namespace Hue_Meetings.Services
             string responseType = "code", string codeChallengeMethod = "S256")
         {
             if (string.IsNullOrEmpty(responseType))
+            {
                 throw new ArgumentNullException(nameof(responseType));
+            }
             if (string.IsNullOrEmpty(codeChallengeMethod))
+            {
                 throw new ArgumentNullException(nameof(codeChallengeMethod));
+            }
 
             // Generates state and PKCE values.
             _state = RandomDataBase64Url(32); // Provides any state that might be useful to your application upon receipt of the response. The Hue Authorization Server roundtrips this parameter, so your application receives the same value it sent. To mitigate against cross-site request forgery (CSRF), it is strongly recommended to include an anti-forgery token in the state, and confirm it in the response. One good choice for a state token is a string of 30 or so characters constructed using a high-quality random-number generator.
@@ -155,7 +165,7 @@ namespace Hue_Meetings.Services
             return await AuthenticateAsync(queryParams);
         }
 
-        public async Task<AccessTokenResponse?> RefreshToken(string refreshToken)
+        public async Task<AccessTokenResponse?> RefreshExpiredToken(string refreshToken)
         {
             var queryParams = new Dictionary<string, string> {
                 { "refresh_token", refreshToken },
@@ -265,7 +275,7 @@ namespace Hue_Meetings.Services
 
                 Output("Using refresh token to request a new access token...");
 
-                return await RefreshToken(_lastAccessTokenResponse.RefreshToken).ConfigureAwait(false);
+                return await RefreshExpiredToken(_lastAccessTokenResponse.RefreshToken).ConfigureAwait(false);
             }
 
             IsInitialized = false;

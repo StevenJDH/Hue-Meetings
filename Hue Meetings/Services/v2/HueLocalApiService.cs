@@ -37,7 +37,7 @@ namespace Hue_Meetings.Services.v2
                 CheckCertificateRevocationList = false,
                 // This is required to use the bridge's self-signed certificate.
                 ServerCertificateCustomValidationCallback =
-                    (httpRequestMessage, cert, cetChain, policyErrors) => 
+                    (_, cert, _, _) => 
                         cert?.Issuer.Equals("CN=root-bridge, O=Philips Hue, C=NL") ?? false
             };
 
