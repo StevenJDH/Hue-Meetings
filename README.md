@@ -12,7 +12,7 @@
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=StevenJDH_Hue-Meetings&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=StevenJDH_Hue-Meetings)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=StevenJDH_Hue-Meetings&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=StevenJDH_Hue-Meetings)
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=StevenJDH_Hue-Meetings&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=StevenJDH_Hue-Meetings)
-![Maintenance](https://img.shields.io/maintenance/yes/2023)
+![Maintenance](https://img.shields.io/maintenance/yes/2024)
 ![GitHub](https://img.shields.io/github/license/StevenJDH/Hue-Meetings)
 
 Hue Meetings is a tool that was developed to help make working from home a little easier by using Philips Hue smart lights as a sort of meeting status indicator. When a call starts, the chosen light will turn red, and when the call ends, the light will either turn green or turn off. And yes, all colors can be customized. Hue Meetings also has a VPN mode to support scenarios where a direct connection to the light is not an option because network traffic is being routed over a VPN connection. 
@@ -50,17 +50,10 @@ Many commonly asked questions are answered in the FAQ:
 
 ## Want to show your support?
 
-|Method       | Address                                                                                                    |
-|------------:|:-----------------------------------------------------------------------------------------------------------|
-|PayPal:      | [https://www.paypal.me/stevenjdh](https://www.paypal.me/stevenjdh "Steven's Paypal Page")                  |
-|Bitcoin:     | 3GyeQvN6imXEHVcdwrZwKHLZNGdnXeDfw2                                                                         |
-|Litecoin:    | MAJtR4ccdyUQtiiBpg9PwF2AZ6Xbk5ioLm                                                                         |
-|Ethereum:    | 0xa62b53c1d49f9C481e20E5675fbffDab2Fcda82E                                                                 |
-|Dash:        | Xw5bDL93fFNHe9FAGHV4hjoGfDpfwsqAAj                                                                         |
-|Zcash:       | t1a2Kr3jFv8WksgPBcMZFwiYM8Hn5QCMAs5                                                                        |
-|PIVX:        | DQq2qeny1TveZDcZFWwQVGdKchFGtzeieU                                                                         |
-|Ripple:      | rLHzPsX6oXkzU2qL12kHCH8G8cnZv1rBJh<br />Destination Tag: 2357564055                                        |
-|Monero:      | 4GdoN7NCTi8a5gZug7PrwZNKjvHFmKeV11L6pNJPgj5QNEHsN6eeX3D<br />&#8618;aAQFwZ1ufD4LYCZKArktt113W7QjWvQ7CWDXrwM8yCGgEdhV3Wt|
+|Method          | Address                                                                                   |
+|---------------:|:------------------------------------------------------------------------------------------|
+|PayPal:         | [https://www.paypal.me/stevenjdh](https://www.paypal.me/stevenjdh "Steven's Paypal Page") |
+|Cryptocurrency: | [Supported options](https://github.com/StevenJDH/StevenJDH/wiki/Donate-Cryptocurrency)    |
 
 
 // Steven Jenkins De Haro ("StevenJDH" on GitHub)
