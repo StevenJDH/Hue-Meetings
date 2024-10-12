@@ -3,7 +3,7 @@
 [![build](https://github.com/StevenJDH/Hue-Meetings/actions/workflows/dotnet-sonar-workflow.yml/badge.svg?branch=main)](https://github.com/StevenJDH/Hue-Meetings/actions/workflows/dotnet-sonar-workflow.yml)
 ![GitHub All Releases](https://img.shields.io/github/downloads/StevenJDH/Hue-Meetings/total)
 ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/StevenJDH/Hue-Meetings?include_prereleases)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/ef02e3c5d4e845159f03a3fc621b3395)](https://www.codacy.com/gh/StevenJDH/Hue-Meetings/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=StevenJDH/Hue-Meetings&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/ef02e3c5d4e845159f03a3fc621b3395)](https://app.codacy.com/gh/StevenJDH/Hue-Meetings/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=StevenJDH_Hue-Meetings&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=StevenJDH_Hue-Meetings)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=StevenJDH_Hue-Meetings&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=StevenJDH_Hue-Meetings)
 [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=StevenJDH_Hue-Meetings&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=StevenJDH_Hue-Meetings)
@@ -17,7 +17,8 @@
 
 Hue Meetings is a tool that was developed to help make working from home a little easier by using Philips Hue smart lights as a sort of meeting status indicator. When a call starts, the chosen light will turn red, and when the call ends, the light will either turn green or turn off. And yes, all colors can be customized. Hue Meetings also has a VPN mode to support scenarios where a direct connection to the light is not an option because network traffic is being routed over a VPN connection. 
 
-Development is still ongoing, and there is still much to be done, but a first release will be available as soon as time permits.
+> [!IMPORTANT]  
+> Development is still ongoing, and there is still much to be done, but a first release will be available as soon as time permits.
 
 [![Buy me a coffee](https://img.shields.io/static/v1?label=Buy%20me%20a&message=coffee&color=important&style=flat&logo=buy-me-a-coffee&logoColor=white)](https://www.buymeacoffee.com/stevenjdh)
 
@@ -33,7 +34,7 @@ Releases: [https://github.com/StevenJDH/Hue-Meetings/releases](https://github.co
 * High DPI Support.
 
 ## Prerequisites
-* .NET 6 or newer installed.
+* .NET 8 or newer installed.
 * Any Philips Hue light.
 * Hue bridge (the square one) with at least firmware 1948086000.
 * Philips Hue developer account (it's free).
