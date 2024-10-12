@@ -2,31 +2,26 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <RootNamespace>Hue_Meetings</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <Description>Switches a Philips Hue light to red or green based on whether a microphone is in use for a meeting.</Description>
     <Authors>Steven Jenkins De Haro</Authors>
-    <Copyright>Copyright © 2022</Copyright>
-    <Version>1.0.0.22041</Version>
-    <AssemblyVersion>1.0.0.22041</AssemblyVersion>
-    <FileVersion>1.0.0.22041</FileVersion>
+    <Copyright>Copyright © 2022-2024</Copyright>
+    <Version>1.0.0.24101</Version>
+    <AssemblyVersion>1.0.0.24101</AssemblyVersion>
+    <FileVersion>1.0.0.24101</FileVersion>
     <RepositoryUrl>https://github.com/StevenJDH/Hue-Meetings</RepositoryUrl>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <NoWarn>1701;1702;NU1701;S1075</NoWarn>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <NoWarn>1701;1702;NU1701;S1075</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="AudioSwitcher.AudioApi" Version="3.0.0" />
-    <PackageReference Include="AudioSwitcher.AudioApi.CoreAudio" Version="3.0.0.1" />
+    <PackageReference Include="AudioSwitcher.AudioApi.CoreAudio" Version="3.0.3" />
+    <!-- Exposes internal classes to test project and Moq. -->
+    <InternalsVisibleTo Include="$(AssemblyName).Tests;DynamicProxyGenAssembly2" />
   </ItemGroup>
 
 </Project>
