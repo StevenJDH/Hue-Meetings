@@ -1,6 +1,6 @@
 /*
  * This file is part of Hue Meetings <https://github.com/StevenJDH/Hue-Meetings>.
- * Copyright (C) 2022 Steven Jenkins De Haro.
+ * Copyright (C) 2022-2024 Steven Jenkins De Haro.
  *
  * Hue Meetings is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -16,6 +16,7 @@
  * along with Hue Meetings.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+// Ignore Spelling: Auth Pkce
 
 using Hue_Meetings.Services;
 using Moq;
